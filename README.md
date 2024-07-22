@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Check out this Project [Check Website](https://eatasty.netlify.app/).
+Check out this Project [https://eatasty.netlify.app](https://eatasty.netlify.app).
 
 ## Available Scripts
 
