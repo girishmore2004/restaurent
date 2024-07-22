@@ -431,29 +431,70 @@ const MenuTitle = styled.div`
   }
 `;
 
+// const Categories = styled.div`
+//   text-align: center;
+//   color: white;
+//   ul {
+//     display: flex;
+//     list-style: none;
+//     justify-content: center;
+//     margin-top: 10px;
+//   }
+//   li {
+//     margin: 10px;
+//     padding: 5px 10px;
+//     font-size: 1rem;
+//     border: 2px solid var(--golden);
+//     border-radius: 20px;
+//     color: var(--golden);
+//     cursor: pointer;
+//   }
+//   li:hover {
+//     background-color: aqua;
+//     color: black;
+//   }
+// `;
 const Categories = styled.div`
   text-align: center;
   color: white;
+
   ul {
     display: flex;
     list-style: none;
     justify-content: center;
     margin-top: 10px;
+    padding: 0;
+    flex-wrap: wrap; /* Allow items to wrap to a new line */
+    gap: 10px; /* Add spacing between items */
+    overflow: hidden; /* Hide overflow to keep layout clean */
   }
+
   li {
-    margin: 10px;
-    padding: 5px 10px;
+    padding: 5px 15px; /* Adjust padding for better spacing */
     font-size: 1rem;
     border: 2px solid var(--golden);
     border-radius: 20px;
     color: var(--golden);
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
   }
+
   li:hover {
     background-color: aqua;
     color: black;
   }
+
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    ul {
+      justify-content: flex-center; /* Align items to the start on small screens */
+    }
+    li {
+      margin-bottom: 10px; /* Space between items on small screens */
+    }
+  }
 `;
+
 
 const Content = styled.div`
   display: flex;
